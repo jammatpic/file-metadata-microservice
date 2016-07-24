@@ -9,4 +9,7 @@ module.exports = function(app, db) {
         .get(function(req, res) {
             res.sendFile(process.cwd() + "/public/index.html");
         });
+
+    app.route("/test")
+        .post(fileHandler.getFileSize);
 };
