@@ -19,6 +19,4 @@
         });
     });
 
-    //TODO: handle file errors
-
 })();

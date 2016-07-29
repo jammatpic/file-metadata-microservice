@@ -4,7 +4,7 @@ var express = require("express"),
     mongo = require("mongodb").MongoClient;
 var app = express();
 
-mongo.connect(process.env.Mongo_URI || "mongodb://localhost:27017/us-db", function(err, db) {
+mongo.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/us-db", function(err, db) {
     if (err) {
         throw new Error("Database failed to connect!");
     } else {
