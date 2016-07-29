@@ -5,7 +5,8 @@ function fileHandler(db) {
 
     // called when user wants to find out size of a file
     this.getFileSize = function(req, res) {
-        res.end("test");
+        var file = req.file;
+        res.send(String(file.size));
     };
 };
 

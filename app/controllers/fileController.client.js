@@ -1,17 +1,24 @@
 "use strict";
 
+(function() {
 
-$("form").submit(function() {
-    var file = new FormData($("form")[0]);
-    
-    $.ajax({
-        url: "http://localhost:3000/test",
-        data: file,
-        processData: false,
-        contentType: false,
-        type: "POST",
-        success: function(data) {
-            alert(data);
-        }
+    $("form").submit(function() {
+        var file = new FormData($("form")[0]);
+        $.ajax({
+            url: "./unique",
+            data: file,
+            processData: false,
+            contentType: false,
+            type: "POST",
+            success: function(data) {
+                alert("Your file is " + data + " bytes in size.");
+            },
+            error: function(error) {
+                alert("File could not be read.");
+            }
+        });
     });
-});
+
+    //TODO: handle file errors
+
+})();
