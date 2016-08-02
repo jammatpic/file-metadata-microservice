@@ -11,8 +11,6 @@ module.exports = function(app) {
         .get(function(req, res) {
             res.sendFile(process.cwd() + "/public/index.html");
         })
+        // uses multer to handle file
         .post(upload.single("theFile"), fileHandler.getFileSize);
-
-
-    //app.post("/unique", upload.single("theFile"), fileHandler.getFileSize);
 };

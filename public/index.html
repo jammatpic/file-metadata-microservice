@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <div class = "container lead">
+    <div class = "container">
         <header class = "page-header">
             <h1>File Metadata Microservice</h1>
         </header>
@@ -13,13 +13,11 @@
             <p>Upload a file, and this service will return that file's size.</p>
         </div>
         <form method="post" name="fileupload" enctype="multipart/form-data">
-            <label class="btn btn-default">
-                <input type="file" name="theFile" style="display:none;"/>
-                Choose File
-            </label>
-            <input type="submit" value="Submit" class = "btn btn-primary"/>
+            <input type="file" title="Choose File" name="theFile"/>
+            <input type="submit" class = "btn btn-primary" value="Submit"/>
         </form>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/public/bootstrap-file-input.js"></script>
     <script type="text/javascript" src="/controllers/fileController.client.js"></script>
 </body>
