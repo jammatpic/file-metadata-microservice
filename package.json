@@ -1,21 +1,21 @@
 {
-  "name": "img-search-abstraction-layer",
+  "name": "file-metadata-microservice",
   "version": "1.0.0",
-  "description": "API that allows you to search for images.",
+  "description": "Allows you to upload a file and find out its size.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jammatpic/img-search-abstraction-layer.git"
+    "url": "git+https://github.com/jammatpic/file-metadata-microservice.git"
   },
   "author": "jammatpic",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jammatpic/img-search-abstraction-layer/issues"
+    "url": "https://github.com/jammatpic/file-metadata-microservice/issues"
   },
-  "homepage": "https://github.com/jammatpic/img-search-abstraction-layer#readme",
+  "homepage": "https://github.com/jammatpic/file-metadata-microservice#readme",
   "dependencies": {
     "express": "^4.14.0",
     "mongodb": "^2.2.0",
